@@ -1,6 +1,6 @@
 const head = require("./head");
 
-const tail = require("./tail")
+const tail = require("./tail");
 
 
 
