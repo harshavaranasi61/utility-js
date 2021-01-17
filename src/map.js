@@ -2,9 +2,9 @@ const head = require("./head");
 const tail = require("./tail");
 
 
-const map = (myArray,callBack) =>{
+const map = (myArray,func) =>{
     if(head(myArray) !== null){
-        return [callBack(head(myArray)),...map(tail(myArray),callBack)];
+        return [func(head(myArray)),...map(tail(myArray),func)];
     }
     else{
     return [];
